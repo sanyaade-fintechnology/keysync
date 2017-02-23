@@ -178,7 +178,7 @@ func (entry *syncerEntry) Sync() error {
 	}
 	secrets, ok := entry.Client.SecretList()
 	if !ok {
-		//SecretList logged the error, continue on
+		// SecretList logged the error, continue on
 		return nil
 	}
 	secretsWritten := map[string]struct{}{}
